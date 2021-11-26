@@ -1,24 +1,30 @@
 
+
 import './App.css';
+import { Productos } from './componentes/Productos';
+import 'bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { ProductList } from './componentes/ProductList';
+import { Comentarios } from './componentes/Comentarios';
 
 function App() {
-
-
   return (
-   
-    <div>
+    <>
+      <div className="container">
+        <div className="row">
+          <div className="col">
+            <Productos />
+          </div>
+          <div className="col">
+            <ProductList />
+          </div>
+          <div className="col">
+            <Comentarios/>
+          </div>
 
-      <div>
-        <input type='text' placeholder='Buscar producto...'/>
-        <input type='text' placeholder='Buscar producto...'/>
+        </div>
       </div>
-
-      <div>
-
-       <img className='imagen' src='./motherboard.jpg' alt='' />
-      </div>
-      
-    </div>
+    </>
   );
 }
 
