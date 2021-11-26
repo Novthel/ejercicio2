@@ -10,6 +10,7 @@ function App() {
 
       <div>
         <input type='text' placeholder='Buscar producto...'/>
+        <input type='text' placeholder='Buscar producto...'/>
       </div>
 
       <div>
